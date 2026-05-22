@@ -1,0 +1,42 @@
+﻿{
+  "version": 1,
+  "sources": [
+    {
+      "id": "live",
+      "label": "Live · C++ backend",
+      "sub": "Real-time from cfar_processor binary via WebSocket",
+      "type": "websocket",
+      "url": "ws://localhost:8000/ws/live"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "highway",
+      "label": "Highway · A14",
+      "sub": "3 vehicles · +14–22 m/s closing",
+      "frame_count": 120,
+      "fps": 25
+    },
+    {
+      "id": "urban",
+      "label": "Urban · Uxbridge Rd",
+      "sub": "5 slow movers · pedestrians + cars at 30 km/h",
+      "frame_count": 160,
+      "fps": 20
+    },
+    {
+      "id": "swarm",
+      "label": "Drone swarm · low-RCS",
+      "sub": "7 UAVs · clustered · low SNR",
+      "frame_count": 100,
+      "fps": 30
+    },
+    {
+      "id": "parking",
+      "label": "Parking lot · static",
+      "sub": "8 parked vehicles · 0 m/s baseline",
+      "frame_count": 80,
+      "fps": 15
+    }
+  ]
+}
